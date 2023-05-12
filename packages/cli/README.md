@@ -125,25 +125,25 @@ EXAMPLES
 
 _See code: [src/commands/init.ts](https://github.com/segmentio/action-destinations/blob/main/packages/cli/src/commands/init.ts)_
 
-## `./bin/run serve [DESTINATION]`
+## `./bin/run serve`
 
 Starts a local development server to test your integration.
 
 ```
 USAGE
-  $ ./bin/run serve [DESTINATION]
-
-ARGUMENTS
-  DESTINATION  destination to serve
+  $ ./bin/run serve
 
 OPTIONS
-  -d, --directory=directory  [default: ./packages/destination-actions/src/destinations] destination actions directory
-  -h, --help                 show CLI help
-
+  -b, --directory=directory     [default: ./packages/destination-actions/src/destinations] destination actions directory
+  -d, --destination=destination destination to serve, skips interactive selection menu
+  -h, --help                    show CLI help
+  -n, --noUI                    do not open actions tester UI in browser
+  -r, --browser                 serve browser destinations
+  
 EXAMPLES
   $ ./bin/run serve
   $ PORT=3001 ./bin/run serve
-  $ ./bin/run serve slack
+  $ ./bin/run serve -d slack
 ```
 
 _See code: [src/commands/serve.ts](https://github.com/segmentio/action-destinations/blob/main/packages/cli/src/commands/serve.ts)_
