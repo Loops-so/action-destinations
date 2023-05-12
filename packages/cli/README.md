@@ -27,7 +27,7 @@ USAGE
 - [`./bin/run generate:types`](#binrun-generatetypes)
 - [`./bin/run help [COMMAND]`](#binrun-help-command)
 - [`./bin/run init [PATH]`](#binrun-init-path)
-- [`./bin/run serve [DESTINATION]`](#binrun-serve-destination)
+- [`./bin/run serve`](#binrun-serve-destination)
 
 ## `./bin/run generate:action NAME TYPE`
 
